@@ -1,0 +1,12 @@
+[Unit]
+Description=Keycloak Container
+
+[Container]
+Image=p-keycloak.build
+ContainerName=keycloak
+ServiceName=pc-keycloak
+Network=p-internal.network
+PublishPort=8080:8080
+
+[Install]
+WantedBy=multi-user.target

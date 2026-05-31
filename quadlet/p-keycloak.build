@@ -1,0 +1,7 @@
+[Unit]
+Description=Build keycloak Container
+
+[Build]
+SetWorkingDirectory=WORKING_DIR_PATH
+ServiceName=pb-keycloak
+ImageTag=keycloak
