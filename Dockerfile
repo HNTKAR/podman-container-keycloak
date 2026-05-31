@@ -1,6 +1,6 @@
 FROM alpine
 RUN apk add --no-cache \
-    openjdk25 \
+    openjdk25-jre \
     mariadb-client
 
 ARG KEYCLOAK_VERSION=26.6.2
