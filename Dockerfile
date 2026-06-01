@@ -15,6 +15,8 @@ ENV KC_BOOTSTRAP_ADMIN_USERNAME=admin
 ENV KC_BOOTSTRAP_ADMIN_PASSWORD=password
 ENV DB_ROOT_USERNAME=root
 ENV DB_ROOT_PASSWORD=PASSWORD
+ENV KC_HTTP_RELATIVE_PATH=/keycloak/
+ENV KC_PROXY_HEADERS=xforwarded
 
 ADD https://github.com/keycloak/keycloak/releases/download/${KEYCLOAK_VERSION}/keycloak-${KEYCLOAK_VERSION}.tar.gz /opt/
 COPY run.sh /usr/local/bin/run.sh
